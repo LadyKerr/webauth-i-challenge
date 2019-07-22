@@ -41,11 +41,11 @@ function update(changes, id) {
   return db("users")
     .where({ id })
     .update(changes);
+}
 
-  //delete user
-  function remove(id) {
-    return db("users")
-      .where({ id })
-      .del();
-  }
+//delete user
+function remove(id) {
+  return db("users")
+    .where({ id })
+    .del();
 }
